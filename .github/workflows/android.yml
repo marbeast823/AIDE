@@ -22,10 +22,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-          cache: gradle
+          cache: gradlew
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradle
+        run: chmod +x gradlew
 
       - name: Build apk
         uses: eskatos/gradle-command-action@v1
